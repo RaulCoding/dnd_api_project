@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/styles/style.css" />
+    <title>5e Magic Cards</title>
+  </head>
+  <body>
+    <header>5e Magic Cards</header>
+    <main>
+      <div id="search" class="searchCard">
+        <h1>What Spell Are you looking for?</h1>
+        <input type="text" id="spellInput" placeholder="Ex.Fireball" />
+        <button id="searchButton">Search</button>
+      </div>
+      <div id="result" class="resultCard">
+        <div id="imgContainer"><img id="spellSchoolImg" /></div>
+        <div id="textContainer">
+          <h1 id="spellName"></h1>
+          <p id="spellLevel"></p>
+          <p id="spellSchool"></p>
+          <p id="spellDesc"></p>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="../scripts/app.js"></script>
+  </body>
+</html>

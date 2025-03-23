@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  font-size: 24px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.searchCard,
+.resultCard {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+#spellInput {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+#searchButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#searchButton:hover {
+  background-color: #0056b3;
+}
+
+.resultCard {
+  display: none; /* Se mostrará cuando haya un resultado */
+}
+
+#imgContainer img {
+  max-width: 100px;
+  margin: 10px 0;
+}
+
+#textContainer h1 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+#textContainer p {
+  font-size: 16px;
+  color: #555;
+}
