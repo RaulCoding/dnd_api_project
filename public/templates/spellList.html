@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/styles/listStyle.css" />
+    <title>SpellList</title>
+  </head>
+  <body>
+    <header>
+      SpellList
+    </header>
+    <main>
+      <div class="container">
+        <div class="formContainer">
+          <label for="damage-type">Tipo de Daño</label>
+          <select name="damage-type" id="damage-type">
+            <option value="noType">-</option>
+            <option value="acid">Acid</option>
+            <option value="bludgeoning">Bludgeoning</option>
+            <option value="cold">Cold</option>
+            <option value="fire">Fire</option>
+            <option value="force">Force</option>
+            <option value="lightning">Lightning</option>
+            <option value="necrotic">Necrotic</option>
+            <option value="piercing">Piercing</option>
+            <option value="poison">Poison</option>
+            <option value="psychic">Psychic</option>
+            <option value="radiant">Radiant</option>
+            <option value="slashing">Slashing</option>
+            <option value="thunder">Thunder</option>
+          </select>
+          <label for="spell-level">Nivel de hechizo:</label>
+          <select name="spell-level" id="spell-level">
+            <option value="noLevel">-</option>
+            <option value="0">Cantrip</option>
+            <option value="1">1st Level</option>
+            <option value="2">2nd Level</option>
+            <option value="3">3rd Level</option>
+            <option value="4">4th Level</option>
+            <option value="5">5th Level</option>
+            <option value="6">6th Level</option>
+            <option value="7">7th Level</option>
+            <option value="8">8th Level</option>
+            <option value="9">9th Level</option>
+          </select>
+          <label for="spell-school">Escuela Mágica</label>
+          <select name="spell-school" id="spell-school">
+            <option value="noSchool">-</option>
+            <option value="abjuration">Abjuration</option>
+            <option value="conjuration">Conjuration</option>
+            <option value="divination">Divination</option>
+            <option value="enchantment">Enchantment</option>
+            <option value="evocation">Evocation</option>
+            <option value="illusion">Illusion</option>
+            <option value="necromancy">Necromancy</option>
+            <option value="transmutation">Transmutation</option>
+          </select>
+          <label for="spellcaster-class">Clase:</label>
+          <select name="spellcaster-class" id="spellcaster-class">
+            <option value="noClass">-</option>
+            <option value="bard">Bard</option>
+            <option value="cleric">Cleric</option>
+            <option value="druid">Druid</option>
+            <option value="paladin">Paladin</option>
+            <option value="ranger">Ranger</option>
+            <option value="sorcerer">Sorcerer</option>
+            <option value="warlock">Warlock</option>
+            <option value="wizard">Wizard</option>
+            <option value="artificer">Artificer</option>
+          </select>
+          <button id="searchListButton">Search</button>
+        </div>
+        <div class="spellList"></div>
+        <div class="spellDescDiv"></div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="../scripts/listScript.js"></script>
+  </body>
+</html>
