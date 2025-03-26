@@ -60,8 +60,9 @@ const displaySpells = (spells) => {
         spellItem.classList.add('spellItem');
         spellItem.innerHTML = `
             <h3>${spell.name}</h3>
-            <p><strong>Nivel:</strong> ${spell.level}</p>
-            <p><strong>Escuela:</strong> ${spell.school.name}</p>
+            <p><strong>Level:</strong> ${spell.level}</p>
+            <p><strong>School:</strong> ${spell.school.name}</p>
+            <p><strong>Damage Type:</strong> ${spell.damage?.damage_type?.name || "No aplica"}</p>
         `;
 
         // Agregar evento de click para mostrar los detalles del hechizo
@@ -78,12 +79,12 @@ const displaySpellDetails = (spell) => {
     const spellDescDiv = document.querySelector('.spellDescDiv');
     spellDescDiv.innerHTML = `
         <h2>${spell.name}</h2>
-        <p><strong>Nivel:</strong> ${spell.level}</p>
-        <p><strong>Escuela:</strong> ${spell.school.name}</p>
-        <p><strong>Duración:</strong> ${spell.duration}</p>
-        <p><strong>Tiempo de lanzamiento:</strong> ${spell.casting_time}</p>
-        <p><strong>Alcance:</strong> ${spell.range}</p>
-        <p><strong>Componentes:</strong> ${spell.components.join(', ')}</p>
-        <p><strong>Descripción:</strong> ${spell.desc.join('<br>')}</p>
+        <p><strong>Level:</strong> ${spell.level}</p>
+        <p><strong>School:</strong> ${spell.school.name}</p>
+        <p><strong>Duration:</strong> ${spell.duration}</p>
+        <p><strong>Casting Time:</strong> ${spell.casting_time}</p>
+        <p><strong>Range/Area:</strong> ${spell.range}</p>
+        <p><strong>Components:</strong> ${spell.components.join(', ')}</p>
+        <p><strong>Description:</strong> ${spell.desc.join('<br>')}</p>
     `;
 };

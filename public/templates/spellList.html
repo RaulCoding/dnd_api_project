@@ -8,12 +8,18 @@
   </head>
   <body>
     <header>
-      SpellList
+      <div>Spell List</div>
+      <nav>
+        <ul>
+          <li>Search by Filter</li>
+          <li>Search by Name</li>
+        </ul>
+      </nav>
     </header>
     <main>
       <div class="container">
         <div class="formContainer">
-          <label for="damage-type">Tipo de Daño</label>
+          <label for="damage-type">Damage Type</label>
           <select name="damage-type" id="damage-type">
             <option value="noType">-</option>
             <option value="acid">Acid</option>
@@ -30,7 +36,7 @@
             <option value="slashing">Slashing</option>
             <option value="thunder">Thunder</option>
           </select>
-          <label for="spell-level">Nivel de hechizo:</label>
+          <label for="spell-level">Spell Level:</label>
           <select name="spell-level" id="spell-level">
             <option value="noLevel">-</option>
             <option value="0">Cantrip</option>
@@ -44,7 +50,7 @@
             <option value="8">8th Level</option>
             <option value="9">9th Level</option>
           </select>
-          <label for="spell-school">Escuela Mágica</label>
+          <label for="spell-school">School of Magic</label>
           <select name="spell-school" id="spell-school">
             <option value="noSchool">-</option>
             <option value="abjuration">Abjuration</option>
@@ -56,7 +62,7 @@
             <option value="necromancy">Necromancy</option>
             <option value="transmutation">Transmutation</option>
           </select>
-          <label for="spellcaster-class">Clase:</label>
+          <label for="spellcaster-class">Spellcaster Class</label>
           <select name="spellcaster-class" id="spellcaster-class">
             <option value="noClass">-</option>
             <option value="bard">Bard</option>
