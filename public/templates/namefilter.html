@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/styles/nameFilterStyle.css" />
+    <link rel="icon" type="image/x-icon" href="../static/images/staff.png" />
+    <title>SpellList</title>
+  </head>
+  <body>
+    <header>
+      <div><a href="index.html">Spell List</a></div>
+      <nav>
+        <ul>
+          <li><a href="spellList.html">Search by Filter</a></li>
+          <li><a href="namefilter.html">Search by Name</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="formContainer">
+          <label for="damage-type">SpellName </label>
+          <input type="text" id="spellName" placeholder="E.g. Fireball" />
+          <button id="searchSpellButton">Search</button>
+        </div>
+        <div class="spellDescDiv">
+          <div class="spellImgContainer"></div>
+          <div class="spellTextContainer"></div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="../scripts/app.js"></script>
+  </body>
+</html>

@@ -62,6 +62,19 @@ app.get("/spells", (req, res) => {
     res.json(filteredSpells);
 });
 
+// Ruta para obtener un hechizo por nombre
+app.get("/spells/:name", (req, res) => {
+    const spellName = req.params.name.toLowerCase();
+
+    const spell = allSpells.find(spell => spell.name.toLowerCase() === spellName);
+
+    if (!spell) {
+        return res.status(404).json({ error: "Hechizo no encontrado" });
+    }
+
+    res.json(spell);
+});
+
 // Iniciar servidor
 app.listen(port, () => {
     console.log(`🚀 Servidor corriendo en http://localhost:${port}`);

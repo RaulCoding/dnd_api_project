@@ -4,15 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../static/styles/listStyle.css" />
+    <link rel="icon" type="image/x-icon" href="../static/images/staff.png">
     <title>SpellList</title>
   </head>
   <body>
     <header>
-      <div>Spell List</div>
+      <div><a href="index.html">Spell List</a></div>
       <nav>
         <ul>
-          <li>Search by Filter</li>
-          <li>Search by Name</li>
+          <li><a href="spellList.html">Search by Filter</a></li>
+          <li><a href="namefilter.html">Search by Name</a></li>
         </ul>
       </nav>
     </header>
@@ -78,7 +79,10 @@
           <button id="searchListButton">Search</button>
         </div>
         <div class="spellList"></div>
-        <div class="spellDescDiv"></div>
+        <div class="spellDescDiv">
+          <div class="spellImgContainer"></div>
+          <div class="spellTextContainer"></div>
+        </div>
       </div>
     </main>
     <footer></footer>
