@@ -42,7 +42,11 @@ document.addEventListener("DOMContentLoaded", () => {
       displaySpells(spells);
     } catch (error) {
       console.error("Error al buscar hechizos:", error);
-      alert("Hubo un problema al buscar los hechizos.");
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Error al buscar hechizos",
+      });
     }
   });
 });
@@ -50,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // Función para mostrar los hechizos en el HTML
 const displaySpells = (spells) => {
   const spellListContainer = document.querySelector(".spellList");
-  spellListContainer.style.display = "block"
+  spellListContainer.style.display = "block";
   spellListContainer.innerHTML = ""; // Limpiar la lista antes de mostrar los nuevos resultados
 
   if (spells.length === 0) {

@@ -8,7 +8,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const spellName = spellInput.value.trim();
 
     if (!spellName) {
-      alert("Por favor, ingresa el nombre de un hechizo.");
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Por favor, ingresa el nombre de un hechizo.",
+      });
       return;
     }
 
@@ -26,7 +30,12 @@ document.addEventListener("DOMContentLoaded", () => {
       displaySpellDetails(spell);
     } catch (error) {
       console.error("Error al buscar el hechizo:", error);
-      alert("No se encontró el hechizo.");
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "No se encontró el hechizo.",
+        footer: '<a href="#">Why do I have this issue?</a>'
+      });
     }
   });
 });
@@ -36,8 +45,7 @@ const displaySpellDetails = (spell) => {
   let spellDescDiv = document.querySelector(".spellDescDiv");
   const spellImgContainer = document.querySelector(".spellImgContainer");
   const spellTextContainer = document.querySelector(".spellTextContainer");
-//   document.querySelector(".formContainer").style.height = "600px"; 
-  spellDescDiv.style.height = "600px"; // Corrección aquí
+  spellDescDiv.style.height = "600px"; //Cambia el tamaño del desc div al pulsar
 
   let schoolImage = "";
   spellDescDiv.style.display = "block";

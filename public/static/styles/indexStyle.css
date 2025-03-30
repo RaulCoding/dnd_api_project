@@ -36,11 +36,14 @@ a {
   color: white;
   text-decoration: none;
   cursor: pointer;
+  padding: 10px;
 }
 
 a:hover {
   color: #e64a19;
   background-color: #4a4a6e;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 main {
