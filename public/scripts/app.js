@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         icon: "error",
         title: "Oops...",
         text: "Por favor, ingresa el nombre de un hechizo.",
+        
       });
       return;
     }

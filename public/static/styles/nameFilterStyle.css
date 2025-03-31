@@ -26,6 +26,10 @@ header {
   height: 100px;
 }
 
+header div a img{
+  height: 2rem;
+}
+
 header ul {
   list-style: none;
   display: flex;
