@@ -3,7 +3,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const searchButton = document.getElementById("searchSpellButton");
   const spellInput = document.getElementById("spellName");
 
-  // Agregar evento de búsqueda por nombre
+  // Agregar evento de "Enter" al campo de texto
+  spellInput.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+      // Disparamos el clic del botón al presionar "Enter"
+      searchButton.click();
+    }
+  });
+
+  // Agregar evento de búsqueda por nombre al botón
   searchButton.addEventListener("click", async () => {
     const spellName = spellInput.value.trim();
 
@@ -12,7 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
         icon: "error",
         title: "Oops...",
         text: "Por favor, ingresa el nombre de un hechizo.",
-        
       });
       return;
     }
@@ -35,7 +42,7 @@ document.addEventListener("DOMContentLoaded", () => {
         icon: "error",
         title: "Oops...",
         text: "No se encontró el hechizo.",
-        footer: '<a href="#">Why do I have this issue?</a>'
+        footer: '<a href="#">Why do I have this issue?</a>',
       });
     }
   });
@@ -46,7 +53,7 @@ const displaySpellDetails = (spell) => {
   let spellDescDiv = document.querySelector(".spellDescDiv");
   const spellImgContainer = document.querySelector(".spellImgContainer");
   const spellTextContainer = document.querySelector(".spellTextContainer");
-  spellDescDiv.style.height = "600px"; //Cambia el tamaño del desc div al pulsar
+  spellDescDiv.style.height = "600px"; // Cambia el tamaño del desc div al pulsar
 
   let schoolImage = "";
   spellDescDiv.style.display = "block";
